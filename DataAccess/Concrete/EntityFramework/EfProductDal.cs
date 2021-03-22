@@ -24,8 +24,8 @@ namespace DataAccess.Concrete.EntityFramework
                              select new ProductDetailDto
                              {
                                  ProductId = p.ProductId,
-                                 CategoryName = c.CategoryName,
                                  ProductName = p.ProductName,
+                                 CategoryName = c.CategoryName,
                                  UnitsInStock = p.UnitsInStock
                              };
                 return result.ToList();
